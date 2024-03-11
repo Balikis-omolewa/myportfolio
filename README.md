@@ -1,10 +1,10 @@
 Balikis Omolewa Portfolio <br>
 Welcome to my portfolio! This repository contains the source code and assets for my personal website, showcasing my skills, projects, and experience as a freelance web developer.
 
-About Me
+About Me<br><br>
 I am a professional freelance web developer with a proven track record in creating and maintaining codebases for reusability. My passion for learning and development drives me to consistently apply my skills to build and maintain functional, attractive, and responsive websites.
 
-Features
+Features<br><br>
 Projects Showcase: Explore a collection of projects I've worked on, including descriptions, technologies used, and live demo links.
 Skills: Discover the various technologies and programming languages in which I specialize.
 Responsive Design: The portfolio website is designed to be responsive, ensuring a seamless experience across different devices.
@@ -17,10 +17,10 @@ Copy code
 git clone https://github.com/yourusername/your-portfolio.git
 Open the index.html file in your preferred web browser.
 
-Technologies Used
-HTML
-SCSS
-CSS
+Technologies Used<br><br>
+HTML<br>
+SCSS<br>
+CSS<br>
 JavaScript
 
 Contact Me
