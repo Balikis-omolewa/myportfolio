@@ -1,4 +1,4 @@
-<b>Balikis Omolewa Portfolio </b> <br>
+<b>Balikis Omolewa Portfolio </b> <br><br>
 Welcome to my portfolio! This repository contains the source code and assets for my personal website, showcasing my skills, projects, and experience as a freelance web developer.
 
 <b>About Me </b><br><br>
@@ -17,13 +17,13 @@ Copy code
 git clone https://github.com/yourusername/your-portfolio.git
 Open the index.html file in your preferred web browser.
 
-<b>Technologies Used</b><br>
+<b>Technologies Used</b><br><br>
 HTML<br>
 SCSS<br>
 CSS<br>
 JavaScript
 
-Contact Me
+<b>Contact Me</b><br>
 Feel free to reach out if you have any questions or if you are interested in collaborating. You can contact me through:
 
 Email: omolewabalikis149@gmail.com
