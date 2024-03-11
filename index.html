@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balikis Omolewa Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+     <link rel="stylesheet" href="layout.css">
+     <link rel="stylesheet" href="external.css">
+   
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                 <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                   <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+        <div class="right-menu">
+        <a href="#">Blog</a>
+        <a href="#contact" style="color: #26A5EA; font-weight: 500;">Contact</a>
+        </div>
+        <!--dropdown menu-->
+        <div class="menuIcon" onclick="toggleMenu()">
+          <i class='bx bx-menu'></i>
+           
+      </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                 <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                   <li><a href="#portfolio">Portfolio</a></li>
+                   <li><a href="#">Blog</a></li>
+                   <li><a href="#contact" style="font-weight: 500;">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <!----Hero-->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+        <span class="hello">Hello I'm</span>
+        <h1>Balikis Omolewa <br><span>Professional Web Developer</span></h1>
+        <p>I can help elevate your online presence and bring your ideas to life with <br> seamless, stunning, <span>and user-centric web solutions.</span></p>
+        <div class="social-icons">
+           <a href="#"> <i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bx-git-branch' ></i></a>
+        </div>
+        <button class="btn"><a href="https://wa.link/nsq1ll">Let's Connect</a></button>
+    </div>
+        <div class="hero-img animate__backOutLeft">
+        <img src="img/hr-bg.png" alt="hero">
+    </div>
+    </section>
+<!---Skill-->
+
+    <section id="skills">
+        <h2 class="se">Skill & Experienced</h2>
+        <div class="skills">
+        <div class="skill">
+            <img src="img/fd.png" alt="skills">
+        </div>
+        <div class="skill">
+            <img src="img/bd.png" alt="skills">
+        </div>
+        <div class="skill">
+            <img src="img/ud.png" alt="skills">
+        </div>
+    </div>
+    </section>
+<br><br>
+    <!---Skill ends-->
+    <!---About-->
+    <section id="about" style="gap: 2rem;">
+    <div class="about-title">
+    <h2>About Me</h2>
+     <h2 class="span">Transforming Vision into Digital <br> Reality is my Thing.</h2>
+    </div>
+    <div class="about">
+     <div class="about-img">
+            <img src="img/ab-bg.png" alt="about">
+        </div>
+        <div class="about-content">
+        <h2>About Me</h2>
+        <p>A Professional freelance Web Developer with proven experience in creating and maintaining codebase for reusability. Passionate about learning and development with a desire to apply
+            skills to build and maintain functional, attractive and responsive websites.</p>
+       <button class="btn"><a href="img/CV_Nasirudeen_Balikis_Omotunrayo.pdf">See Resume</a></button>
+    </div>
+     </div>  
+    </section>
+
+<!---Services-->
+  <section id="services">
+    <h2>What I am Great At </h2>
+       <h2 class="span">My Services</h2>
+       <div class="container">
+        <div class="tab-container">
+            <div class="tab-buttons">
+              <button onclick="openTab('tab1')"><img src="img/wb.png" width="256" alt="icon"></button>
+              <button onclick="openTab('tab2')"><img src="img/ec.png" width="256" alt="icon"></button>
+              <button onclick="openTab('tab3')"><img src="img/wc.png" width="256" alt="icon"></button>
+              <button onclick="openTab('tab4')"><img src="img/mc.png" width="256" alt="icon"></button>
+            </div>
+          
+            <div id="tab1" class="tab active">
+                <img src="img/wb-c.png" width="100%" alt="wb-c" style="margin-top: 3.5%;">
+            </div>
+          
+            <div id="tab2" class="tab">
+                <img src="img/ec-c.png" width="100%" alt="wb-c" style="margin-top: 15%;">
+            </div>
+            <div id="tab3" class="tab">
+                <img src="img/wc-c.png" width="100%" alt="wb-c" style="margin-top: 27%;">
+              </div>
+              <div id="tab4" class="tab">
+                <img src="img/mc-c.png" width="100%" alt="wb-c" style="margin-top: 39%;">
+              </div>
+          </div>
+       </div>
+      
+     </div>
+</section>
+<!---Testimonials-->
+<section id="testmonials">
+    <h2>Testimonials</h2>
+    <div class="Testmonials">
+        <div class="testmon-img">
+        <img src="img/testmon.png" alt="ser-img">
+        </div>
+        
+    </div>
+</section>
+<!---contact-->
+<section id="contact">
+    <h2>Contact <span class="me">Me</span></h2>
+    <form target="_blank" action="https://formsubmit.co/32f4563a23bccf7263213e6f0b5456f4" method="POST">
+        <input type="hidden" name="_subject" value="New submission! From Portfolio">  
+        <input type="hidden" name="_template" value="table">
+        <div class="input-box">
+                <input type="text" name="name" placeholder="Name" >
+                <input type="email" name="email" placeholder="Email">
+             </div>
+            <div class="input-box">
+                 <input type="number" name="phone" placeholder="Phone" >
+                 <input type="text" name="subject" placeholder="Subject">
+            </div>
+            <textarea cols="30" rows="18" name="message" placeholder="Message"></textarea>
+           <button type="submit" name="submit"><a>Send Message</a></button>
+           <input type="hidden" name="_captcha" value="false">
+           <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+        </form>
+       
+</section>
+
+<!---footer-->
+<footer>
+    <div class="footer">
+    <a href="#"><img src="img/logo-footer.png" alt="logo" class="logo"></a>
+    <div class="menu">
+       <ul>
+          <li><a href="#hero">Home</a></li>
+                 <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="social-icons">
+            <a href="#"> <i class='bx bxl-facebook'></i></a>
+             <a href="#"><i class='bx bxl-linkedin'></i></a>
+             <a href="#"><i class='bx bxl-github'></i></a>
+             <a href="#"><i class='bx bx-git-branch' ></i></a>
+         </div>
+    </div>
+   </footer>
+
+   
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('.menu-section');
+
+    document.querySelectorAll('.menu-link').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetSection = document.querySelector(this.getAttribute('href'));
+
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+
+</script>
+
+<script>
+   // menu icon toggle
+function toggleMenu() {    
+  let menuIcon = document.querySelector('.menuIcon');
+  let navbar = document.querySelector('.navbar');
+
+  menuIcon.querySelector('i').classList.toggle('bx-menu');
+  menuIcon.querySelector('i').classList.toggle('bx-x');
+  navbar.classList.toggle('open');
+};
+
+// close menu when a menu item is clicked
+document.querySelectorAll('.navbar a').forEach(item => {
+  item.addEventListener('click', () => {
+    let menuIcon = document.querySelector('.menuIcon');
+    let navbar = document.querySelector('.navbar');
+
+    menuIcon.querySelector('i').classList.toggle('bx-menu');
+    menuIcon.querySelector('i').classList.toggle('bx-x');
+    navbar.classList.remove('open');
+  });
+});
+
+        // JavaScript for changing header background color on scroll
+        document.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            var scrollPosition = window.scrollY;
+    
+            if (scrollPosition > 50) {
+                header.style.backgroundColor = "#1C2455"; 
+                header.style.padding = "10px";
+            } else {
+                header.style.backgroundColor = "transparent"; 
+            }
+        });
+    </script>
+    <script>
+        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?57586';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+      "enabled":true,
+      "chatButtonSetting":{
+          "backgroundColor":"#3E296E",
+          "box-shadow":"0 3px 10px #0003",
+          "ctaText":"",
+          "borderRadius":"25",
+          "marginLeft":"0",
+          "marginBottom":"30",
+          "marginRight":"50",
+          "position":"right"
+      },
+      "brandSetting":{
+          "brandName":"CodeSis",
+          "brandSubTitle":"Typically replies instantly",
+          "brandImg":"img/logo.png",
+          "welcomeText":"Hi there!\nHow can I help you?",
+          "messageText":"Hello, I have a question about {{page_link}}",
+          "backgroundColor":"#3E296E",
+          "ctaText":"Start Chat",
+          "borderRadius":"25",
+          "autoShow":false,
+          "phoneNumber":"2348085754756"
+      }
+    };
+        s.onload = function() {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        function openTab(tabName) {
+          const tabs = document.querySelectorAll('.tab');
+          tabs.forEach(tab => {
+            tab.classList.remove('active');
+          });
+      
+          const selectedTab = document.getElementById(tabName);
+          selectedTab.classList.add('active');
+        }
+      </script>
+</body>
+</html>

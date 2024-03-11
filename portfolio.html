@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Balikis Omolewa Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="layout.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1C2455;
+  padding: 20px;
+  font-family: Arial;
+}
+header{
+  position: fixed;
+  top: 0;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: 20px auto;
+  margin-top: 5%;
+}
+.main h2{
+   padding-top: 7%;
+}
+.main h2, .desc{
+   margin: 10px -8%; color: #fff; padding-bottom: 20px;
+}
+.row {
+  margin: 10px -10%;
+}
+#myBtnContainer{
+    margin: 10px -8%;
+}
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 10px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+  
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background: #3E296E;
+  opacity: 100%;
+  border: 2px solid #3E296E;
+  color: #fff;
+  border-radius: 1px;
+  padding: 10px;
+}
+.content img{
+  border-radius: 1px;
+}
+.content p{
+  font-style: italic;
+}
+
+.content p a{
+  color: #1C2455;
+  text-decoration: underline;
+}
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #3E296E;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+.btn:hover {
+  background-color: #26A5EA;
+  color: #fff;
+}
+
+.btn.active {
+  background-color: #26A5EA;
+  color: white;
+}
+</style>
+
+<style>
+  .portfolio-item {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+  }
+
+  .portfolio-image {
+      width: 100%;
+      height: auto;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+  }
+
+  .portfolio-item:hover .portfolio-image {
+      opacity: 1;
+  }
+
+  .portfolio-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      color: #fff;
+      text-align: center;
+      font-size: 20px;
+  }
+</style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <a href="https://wa.link/nsq1ll">Contact</a>
+       
+            </ul>
+        </nav>
+     </header>
+<!-- main portfolio-->
+<div class="main">
+<hr>
+<h2>Creative by profession</h2>
+<p class="desc"> web development | ui design</p>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> All</button>
+  <button class="btn" onclick="filterSelection('web')"> Website Design</button>
+  <button class="btn" onclick="filterSelection('ui')"> User Interface Design</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column web">
+    <div class="content">
+      <img src="img/p2.JPG" alt="website" style="width:100%">
+      <p>Web site design for <a href="#">Placement-Hub</a> – A platform for cutting-edge tech courses.</p>
+    </div>
+  </div>
+  <div class="column ui">
+    <div class="content">
+    <img src="img/p5.JPG" alt="ui" style="width:100%">
+    <p>Website design for <a href="#">Burger's</a> – A platform where you can get healthy food.</p>
+    
+    </div>
+  </div>
+  <div class="column web">
+    <div class="content">
+    <img src="img/p1.JPG" alt="website" style="width:100%">
+     <p>Website design for <a href="#">FastraSuite</a> – A platform for business automation process with cloud RRP.</p>
+    </div>
+  </div>
+  
+<!-- END GRID -->
+</div>
+<div class="row">
+  <div class="column web">
+    <div class="content">
+      <img src="img/p8.PNG" alt="website" style="width:100%">
+      <p>Landing page Website conversion for <a href="#">FastraSuite</a> – A CloudERP software for business solutions.</p>
+    </div>
+  </div>
+  <div class="column ui">
+    <div class="content">
+    <img src="img/p11.JPG" alt="ui" style="width:100%">
+    <p>Website design for <a href="#">Bigfixtech </a> – A tech IT Solution Service provider.</p>
+    
+    </div>
+  </div>
+  <div class="column web">
+    <div class="content">
+    <img src="img/p9.PNG" alt="website" style="width:100%">
+     <p>Website design for <a href="#">Phub Travels</a> – A travel and tour website to your destinations.</p>
+    </div>
+  </div>
+  
+<!-- END GRID -->
+</div>
+
+<div class="row">
+  <div class="column web">
+    <div class="content">
+      <img src="img/p4.JPG" alt="website" style="width:100%">
+      <p>Web site design for <a href="#">Placement-Hub</a> – A platform for cutting-edge tech courses.</p>
+    </div>
+  </div>
+  <div class="column ui">
+    <div class="content">
+    <img src="img/p3.JPG" alt="ui" style="width:100%">
+    <p>Website design for <a href="#">Bigfixtech </a> – A tech IT Solution Service provider.</p>
+    
+    </div>
+  </div>
+  <div class="column web">
+    <div class="content">
+    <img src="img/p6.JPG" alt="website" style="width:100%">
+     <p>Website design for <a href="#">Phub Travels</a> – A travel and tour website to your destinations.</p>
+    </div>
+  </div>
+  
+<!-- END GRID -->
+</div>
+<div class="row">
+  <div class="column web">
+    <div class="content">
+      <img src="img/p7.JPG" alt="website" style="width:100%">
+      <p>Web site design for <a href="#">Placement-Hub</a> – A platform for cutting-edge tech courses.</p>
+    </div>
+  </div>
+  <div class="column ui">
+    <div class="content">
+    <img src="img/p11.JPG" alt="ui" style="width:100%">
+    <p>Website design for <a href="#">Bigfixtech </a> – A tech IT Solution Service provider.</p>
+    
+    </div>
+  </div>
+  <div class="column web">
+    <div class="content">
+    <img src="img/p9.PNG" alt="website" style="width:100%">
+     <p>Website design for <a href="#">Phub Travels</a> – A travel and tour website to your destinations.</p>
+    </div>
+  </div>
+  
+<!-- END GRID -->
+</div>
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

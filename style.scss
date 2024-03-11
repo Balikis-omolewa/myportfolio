@@ -1,0 +1,394 @@
+@import "general";
+*{
+    @include general-property;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: $sec-color;
+   box-sizing: border-box;
+}
+header{
+    @extend .display;
+    margin-left: 3%;
+   margin-right: 3%;
+    margin-top: 0 !important;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    transition: background-color 0.3s ease;
+}
+.menu-section {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+.logo{
+    font-size: 2.5rem;
+    padding: 25px;
+    cursor: pointer;
+}
+nav{
+    margin-right: auto;
+    ul{
+        list-style: none; 
+    }
+    li{
+        display: inline; 
+        padding: 25px;  
+    }
+    a{
+        font-family: $pri-family;
+        color: $text-color;
+        font-size: $text-font;
+        font-weight: $med;
+        line-height: normal;
+        transition: .3s ease;
+        cursor: pointer;
+        
+    }
+    a:hover{
+        border-bottom: 3px solid $pri-color;
+        color: $pri-color;
+        }
+}
+.right-menu{
+    a{
+        color: $text-color;
+        font-size: $text-font;
+        padding: 25px;
+        font-weight: $med;
+        line-height: normal;
+        font-family: $pri-family;
+        transition: .3s ease;
+        cursor: pointer;
+    }
+}
+ 
+/*--Hero page here--*/
+.hero{
+    @extend .display;
+    @extend .g-margin;
+    margin-top: 2% !important;
+    }
+.hero-content{
+     .hello{
+        font-size: $text-font;
+        color: $text-color;
+        font-family: $pri-family;
+        margin-left: 1%;
+   }
+        h1{
+        font-size: 65px;
+        color: $text-color; 
+        font-family: $sec-family;
+        line-height: 0.8;
+        letter-spacing: 2px;
+        font-weight: 600;
+        span{
+            font-size: 42px;
+            color: $pri-color;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+    }
+   
+    p{
+        font-size: $text-font;
+        color: $text-color; 
+        font-family:  $pri-family;
+        line-height: 1.5;
+        font-weight: 300;
+        padding: 10px 0px 55px;
+        span{
+            color: $pri-color;
+            font-weight: 300;
+        }
+    }
+    .social-icons{
+        a{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 2.2rem;
+            height: 2.2rem;
+            background: $text-color;
+            border: .2rem solid $pri-color;
+            border-radius: 50%;
+            font-size: 1.1rem;
+            color: $sec-color;
+            margin: 4px;
+            transition: .5s ease;
+        }
+        a:hover{
+            background: $pri-color;
+            color: $sec-color;
+            box-shadow: 0 0 1rem $pri-color;
+        }
+    }
+    .btn{
+        @extend .button;
+    }
+    }
+
+.hero-img{
+    img{
+        width: 450px;
+        object-fit: contain;
+        margin-right: -15%;
+        margin-top: 5%;
+        image-rendering: pixelated;
+}
+}
+/*---skills---*/
+#skills{
+    @extend .g-margin;
+    .se{
+        text-align: left;
+        color: $text-color;
+         font-size: 32px; 
+         font-weight: 600;
+         padding-bottom: 20px;
+         font-family: $sec-family; 
+    }
+    .skills{
+        @extend .display;
+        gap: 2rem;
+       
+    .skill{
+        img{
+            image-rendering: pixelated;
+           width: 100%;
+           -webkit-filter: contrast(100%) brightness(110%);
+           -moz-filter: contrast(100%) brightness(110%);
+           -ms-filter: contrast(100%) brightness(110%);
+           -o-filter: contrast(100%) brightness(110%);
+           filter: contrast(100%) brightness(110%);
+            
+        }
+    }
+}
+}
+/*----about----*/
+#about{
+    margin-top: 2% !important;
+    .about-title{
+        h2{
+            text-align: center;
+            color: $pri-color;
+             font-size: 35px; 
+             font-weight: 500;
+             padding: 20px;
+             line-height: 1.2;
+             font-family: $pri-family;
+        }
+        .span{
+            color: $text-color !important;
+            padding: 10px;
+            font-family: $sec-family;
+            font-weight: 400 !important;
+             }
+    }
+.about{
+    @extend .display;
+    @extend .g-margin;
+   gap: 2rem; 
+.about-content{
+        h2{
+        font-size: 35px;
+        color: $text-color; 
+        font-family: $sec-family;
+        line-height: 0.7;
+        letter-spacing: 2px;
+        font-weight: 600;
+        }
+   
+        p{
+        font-size: $text-font;
+        color: $text-color; 
+        font-family:  $pri-family;
+        line-height: 1.5;
+        font-weight: 300;
+        padding: 10px 0px 65px;
+        font-size: 28px;
+        }
+   
+        .btn{
+            @extend .button;
+        }
+    }
+
+.about-img{
+    img{
+        width: 620px;
+        object-fit: contain;
+        margin-right: -15%;
+        margin-top: -12%;
+        image-rendering: pixelated;
+        }
+    }
+}
+}
+
+/*----testmonial----*/
+#testmonials{
+    margin-top: 5%;
+    h2{
+        text-align: center;
+        color: $text-color;
+         font-size: 35px; 
+         font-weight: 400;
+         padding: 20px;
+         font-family: $pri-family;
+         margin-bottom: 3%;
+    }
+   .Testmonials{
+    @extend .display;
+    justify-content: center !important;
+    .testmon-img img{
+        width: 100% !important;
+        margin: 0 auto;
+    }
+   } 
+}
+/*----contact----*/
+#contact{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    h2{
+        text-align: center;
+        color: $text-color;
+         font-size: 35px; 
+         font-weight: 400;
+         padding: 10px;
+         font-family: $pri-family;
+         margin-bottom: 2%;
+    }.me{
+        color: $pri-color;
+        font-family: $pri-family;
+    }
+     form{
+    margin: 10px auto;
+    background: transparent;
+    width: 70rem;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 3rem;
+    .input-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+       }
+       input,
+    textarea{
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1rem;
+    background-color: $text-color;
+    color: $sec-color;
+    border-radius: .2rem;
+    margin: .5rem 0;
+   }
+   input{
+    width: 49%;
+   }
+   textarea{
+    resize: none;
+   }
+   }
+  button{
+    @extend .button;
+    margin-top: 20px !important;
+    font-size: 25px;
+   }
+}
+/*---footer---*/
+footer{ 
+    flex-wrap: wrap;
+    background-color: $pri-color;
+    height: 12vh;
+    .footer{
+    @extend .display;
+    margin-left: 3%;
+    margin-right: 3%;
+   .logo{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+   .menu{
+    margin-right: auto;
+    ul{
+        list-style: none; 
+    }
+    li{
+        display: inline; 
+        padding: 25px;  
+    }
+    a{
+        font-family: $pri-family;
+        color: $sec-color;
+        font-size: $text-font;
+        font-weight: $med;
+        line-height: normal;
+        transition: .3s ease;
+        cursor: pointer;
+        
+    }
+}
+   .social-icons{
+    a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        background: $sec-color;
+        border: .2rem solid $pri-color;
+        border-radius: 50%;
+        font-size: 1rem;
+        color: $text-color;
+        margin: 2px;
+        transition: .5s ease;
+    }
+    a:hover{
+        border: 3px solid $pri-color;
+        color: $pri-color;
+        box-shadow: 0 0 1rem $sec-color;
+    }
+}
+    }
+}
+/*menu responsiveness */
+.menuIcon{
+    display: none;
+    font-size: 3.6rem;
+    color: $text-color;
+    cursor: pointer;
+}
+.navbar{
+    display: none;
+    ul{
+        list-style: none; 
+    }
+    li{
+        display: inline; 
+        padding: 25px;  
+    }
+    a{
+        font-family: $pri-family;
+        color: $text-color;
+        font-size: $text-font;
+        font-weight: $med;
+        line-height: normal;
+        transition: .3s ease;
+        cursor: pointer;
+    }
+    a:hover{
+        color: $pri-color;
+        border-bottom: 3px solid $pri-color;
+        }
+}

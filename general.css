@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Kurale&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap");
+.display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Variables declaration Define */
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #26A5EA;
+  border-radius: 30px;
+  margin-top: 12px;
+  box-shadow: 0 0 1rem #26A5EA;
+}
+.button a {
+  color: #1C2455;
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  text-shadow: 0 0 0.1rem #ffffff;
+}
+
+.g-margin {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}/*# sourceMappingURL=general.css.map */

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap');
+ @mixin general-property{
+    margin: 0; padding: 0; box-sizing: border-box; 
+    border: none; outline: none; text-decoration: none;
+    scroll-behavior: smooth; font-family: $sec-family;
+}
+ .display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+ }
+ /* Variables declaration Define */
+$sec-color: #1C2455;
+$pri-color: #26A5EA;
+$text-color: #ffffff;
+$text-font: 18px;
+$med: 400;
+$pri-family: 'kurale', serif;
+$sec-family: 'Outfit', sans-serif;
+
+.button{
+   display: inline-block;
+        padding: 15px 30px;
+        background-color: $pri-color;
+        border-radius: 30px;
+        margin-top: 12px;
+        box-shadow: 0 0 1rem $pri-color;
+        a{
+        color: $sec-color;
+        font-weight: 600;
+        font-size: 28px;
+        text-align: center;
+        text-shadow: 0 0 0.1rem $text-color;
+        }
+}
+.g-margin{
+   margin-top: 5%;
+   margin-left: 5%;
+   margin-right: 5%;
+}

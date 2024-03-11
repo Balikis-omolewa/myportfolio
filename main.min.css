@@ -1,0 +1,4 @@
+/* Customize Bootstrap variables */
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+/* Import Bootstrap source Sass files */
+@import '~bootstrap/scss/bootstrap';

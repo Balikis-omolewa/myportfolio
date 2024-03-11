@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Balikis Omolewa Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="layout.css">
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    min-height: 100vh;
+    overflow: hidden;
+    display: none;
+}
+
+#home {
+    display: block;
+    background-color: #f0f0f0;
+    /* Add hero section styles */
+}
+
+/* Add styles for other sections as needed */
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="menu-link">Home</a></li>
+                <li><a href="#about" class="menu-link">About</a></li>
+                <li><a href="#services" class="menu-link">Services</a></li>
+                <!-- Add links for other sections -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section hero" style="background-color: #333;">
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <span class="hello">Hello I'm</span>
+                <h1>Balikis Omolewa <br><span>Professional Web Developer</span></h1>
+                <p>I can help elevate your online presence and bring your ideas to life with <br> seamless, stunning, <span>and user-centric web solutions.</span></p>
+                <div class="social-icons">
+                   <a href="#"> <i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bx-git-branch' ></i></a>
+                </div>
+                <button class="btn"><a href="https://wa.link/nsq1ll">Let's Connect</a></button>
+            </div>
+                <div class="hero-img animate__backOutLeft">
+                <img src="img/hero.png" alt="hero">
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <p style="color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore velit officia blanditiis minima repellendus dolorum laborum repellat enim optio, nam pariatur? Eveniet dolorem sapiente voluptates corrupti molestias animi ex maiores?</p>
+       </section>
+
+        <section id="services" class="section">
+            <p style="color: orange;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore velit officia blanditiis minima repellendus dolorum laborum repellat enim optio, nam pariatur? Eveniet dolorem sapiente voluptates corrupti molestias animi ex maiores?</p>
+       
+        </section>
+
+        <!-- Other Sections -->
+    </main>
+
+    <script src="script.js"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('.section');
+    const navLinks = document.querySelectorAll('.menu-link');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetSection = document.querySelector(this.getAttribute('href'));
+            
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            targetSection.style.display = 'block';
+            targetSection.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
