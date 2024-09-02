@@ -1,0 +1,145 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  .main h2{
+     padding-top: 7%;
+  }
+  .main h2, .desc{
+     margin: 10px -8%; color: #fff; padding-bottom: 20px;
+  }
+  .row {
+    margin: 10px -10%;
+  }
+  #myBtnContainer{
+      margin: 10px -8%;
+  }
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 10px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+    
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background: white;
+    opacity: 100%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .content img{
+    border-radius: 35px;
+  }
+  .content p{
+    font-style: italic;
+  }
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  
+  .btn:hover {
+    background-color: #26A5EA;
+    color: #fff;
+  }
+  
+  .btn.active {
+    background-color: #26A5EA;
+    color: white;
+  }
+  
+  /*----services----*/
+  #services{ margin-top: 5%; }
+     #services h2{
+          text-align: center;
+          color: #26A5EA;
+           font-size: 35px; 
+           font-weight: 500;
+           padding: 20px;
+           font-family:'kurale', serif;    
+      }
+      #services .span{ color: #fff !important;
+          padding: 10px;
+          font-family: 'kurale', serif;
+           }
+   
+  
+  #services .container{
+          margin: 10px auto;
+          background-color: transparent;
+          width: 75rem;
+      }
+  
+  .tab-container {
+  background-color: #151C46;
+  box-shadow: 0 0 10px rgba(107, 107, 107, 0.1);
+  border-radius: 0;
+  overflow: hidden;
+  display: flex;
+  padding: 40px;
+  }
+  .tab-buttons {
+  display: flex;
+  flex-direction: column;
+  }
+  
+  button {
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 10px 20px;
+  transition: background-color 0.3s;
+  }
+  
+  button:hover {
+  background-color: transparent;
+  }
+  
+  .tab {
+  display: none;
+  image-rendering: pixelated;
+  }
+  
+  .tab.active {
+  display: block;
+  }
+  
+  p {
+  padding: 20px;
+  margin: 0;
+  }
+  

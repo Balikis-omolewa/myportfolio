@@ -1,0 +1,325 @@
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+/* Session Styling */
+@media (max-width: 999px) {
+    header {
+        padding: 2rem 3%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .logo {
+        width: 120px;
+        padding: 10px;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    footer {
+        padding: 2rem 3%;
+    }
+}
+
+/* Nav Menu Session */
+@media (max-width: 768px){
+    .menuIcon{
+    display: block;
+    }
+    nav, .right-menu{
+        display: none;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        padding: 1rem 3%;
+        background-color: #1C2455;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow:  0 .5rem 1rem rgba(0, 0, 0, .2);
+        border-radius: 20px;
+        display: none;
+    }
+    .navbar.open {
+          display: block;
+        }
+    .navbar.open a{
+        display: block;
+        font-size: 2rem;
+        margin: 2rem 0;
+        text-align: left;
+    }
+        }
+    
+/* Heros Session */
+@media (max-width: 999px) {
+    .hero {
+        margin: 3%;
+        display: block;
+        margin-top: -10% !important;
+    }
+
+    .hero-content .hello {
+        font-size: 18px;
+        padding-bottom: 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 4.5rem;
+        line-height: 0.9;
+        white-space: normal;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        white-space: normal;
+    }
+
+    .hero-content h1 span {
+        font-size: 3.5rem;
+    }
+
+    .hero-content .social-icons a {
+        width: 3.2rem;
+        height: 3.2rem;
+        font-size: 2rem;
+        border: 0.3rem solid #26A5EA;
+    }
+
+    .hero-content .btn {
+        padding: 15px 30px;
+    }
+
+    .hero-content .btn a {
+        font-size: 25px;
+    }
+
+    .hero-img img {
+        width: 100%;
+        margin-top: 7%;
+    }
+
+    br {
+        display: none;
+    }
+}
+
+/* Skill Session */
+@media (max-width: 999px) {
+    #skills {
+        margin: 3%;
+        margin-top: -12%;
+    }
+
+    #skills .skills {
+        display: block;
+    }
+
+    #skills .skills img {
+        margin-bottom: 5%;
+    }
+}
+
+/* About Session */
+@media (max-width: 999px) {
+    #about {
+        display: block;
+        margin: 3%;
+        margin-top: -12% !important;
+    }
+
+    br {
+        display: none;
+    }
+   
+    #about .about-title h2 {
+        font-size: 25px;
+        white-space: normal;
+        line-height: 1.2;
+        padding: 2px;
+        color: #26A5EA;
+        text-align: center;
+    }
+
+    #about .about-title .span {
+        padding: 5px;
+        color: #fff;
+    }
+
+    #about .about {
+        display: block;
+    }
+
+    #about .about .about-img img {
+        width: 100% !important;
+        object-fit: contain;
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
+
+    #about .about .about-content h2{
+        font-size: 25px;
+        margin-left: 3%;
+    }
+
+    #about .about .about-content p {
+        font-size: 16px;
+        white-space: normal;
+        margin-left: 3%;
+    }
+
+    #about .about .about-content .btn {
+        margin-left: 15px;
+        padding: 15px 30px;
+    }
+
+    #about .about .about-content .btn a {
+        font-size: 25px;
+    }
+}
+
+/* Services Session */
+@media (max-width: 999px) {
+    #services {
+        margin: 3%;
+        width: 100%;
+        display: block;
+        margin-top: -15%;
+    }
+
+    br {
+        display: none;
+    }
+
+    #services h2 {
+        font-size: 25px;
+    }
+
+    #services .span {
+        padding: 0;
+        white-space: normal;
+        padding-bottom: 25px;
+    }
+    #services .container {
+        width: 100% !important;
+    }
+    #services .container .tab-container {
+        width: 100% ;
+        display: block;
+        padding: 10px;
+    }
+    .tab-container .tab-buttons button {
+        display: block;
+        width: 100%;
+    }
+    .tab-buttons {
+        display: block;
+        flex-direction: column;
+        }
+        button{
+            margin: 10px;
+            padding: 10px;
+            margin-left: -2% !important;
+        }
+        .tab {
+            display: none;
+          }
+    .tab img{
+        margin-top: 3.5% !important;
+        margin-left: 5% !important;
+        width: 100%;
+        image-rendering: pixelated;
+    }
+    .tab.active {
+        display: block;
+        width: 100%;
+        }
+    }
+/* Testmonials Session */
+@media (max-width: 999px) {
+    #testmonials {
+        margin: 3%;
+        display: block;
+        margin-top: -20%;
+    }
+
+    #testmonials h2 {
+        font-size: 25px;
+    }
+
+    #testmonials .Testmonials {
+        display: block;
+    }
+
+    #testmonials .Testmonials .testmon-img img {
+        width: 100%;
+    }
+}
+
+/* Contact Session */
+@media (max-width: 999px) {
+    #contact {
+        display: block;
+        margin-top: -20%;
+    }
+
+    #contact h2 {
+        font-size: 25px;
+    }
+
+    #contact form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #contact form .input-box {
+        display: block;
+    }
+
+    #contact form input,
+    #contact form textarea {
+        padding: 2.2rem;
+        width: 100% !important;
+        font-size: 17px;
+    }
+
+    #contact form button {
+        padding: 15px 30px;
+    }
+
+    #contact form button a {
+        font-size: 25px;
+    }
+}
+
+/* Footer Session */
+@media (max-width: 999px) {
+    footer {
+        display: block;
+        height: 100%;
+        margin: 0;
+    }
+
+    footer .footer {
+        display: block;
+    }
+
+    footer .footer .menu li {
+        margin-right: 0 !important;
+        padding: 20px 10px;
+        display: block;
+    }
+
+    footer .footer .social-icons a {
+        width: 4.2rem;
+        height: 4.2rem;
+        font-size: 2.2rem;
+        border: 0.3rem solid #1C2455;
+    }
+}
