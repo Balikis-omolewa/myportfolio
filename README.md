@@ -102,5 +102,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 - Name: Nasirudeen Balikis Omotunrayo Omolewa
-- Email: (mailto:omolewabalikis149@gmail.com)
+- Email: omolewabalikis149@gmail.com
 - GitHub: https://github.com/Balikis-omolewa
