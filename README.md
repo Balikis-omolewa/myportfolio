@@ -1,6 +1,6 @@
 # Portfolio Website Conversion to Next.js
 
-This project is a transformation of a portfolio website originally crafted with HTML, CSS, and JavaScript into a modern Next.js application. I'm Balikis Omotunrayo Omolewa, and this project marks a significant milestone in my journey as a developer. It’s that pivotal moment when you recognize the need to upskill and embrace more advanced technologies in the field. Five months ago, I built this portfolio with the fundamental tools of web development, and now, it’s time to take it to the next level.
+This project is a transformation of a portfolio website originally crafted with HTML, CSS, and JavaScript into a modern Next.js application. I'm Balikis Omolewa, and this project marks a significant milestone in my journey as a developer. It’s that pivotal moment when you recognize the need to upskill and embrace more advanced technologies in the field. Five months ago, I built this portfolio with the fundamental tools of web development, and now, it’s time to take it to the next level.
 
 ## Project Overview
 
